@@ -8,9 +8,15 @@ document.addEventListener("DOMContentLoaded", function () {
     if (task != 0) {
       const li = document.createElement("li");
       li.innerHTML = `
-          <span>${task}</span>
-          <button class="complete-button">☑️ </button>
-          <button class="delete-button">❌</button>
+          <span class="item">${task}</span>
+          <div class="btn-wrap">
+            <button class="complete-button">
+              <i class="fa-solid fa-check fa-lg"></i>
+            </button>
+            <button class="delete-button">
+              <i class="fa-solid fa-x fa-lg"></i>
+            </button>
+          </div>
         `;
       todoList.appendChild(li);
       todo.value = "";
@@ -18,7 +24,9 @@ document.addEventListener("DOMContentLoaded", function () {
       // event listener untuk complete dan delelte
       const btnDone = li.querySelector(".complete-button");
       btnDone.addEventListener("click", function () {
-        li.classList.toggle("completed");
+        const item = li.querySelector(".item");
+        item.classList.toggle("completed");
+        // li.classList.toggle("completed");
       });
 
       const btnDel = li.querySelector(".delete-button");
