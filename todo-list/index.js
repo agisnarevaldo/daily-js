@@ -35,5 +35,11 @@ document.addEventListener("DOMContentLoaded", function () {
       })
     }
   });
+
+  // function addToCompleted () {
+    // const item2 = li.querySelector
+  // }
   
 });
+
+
