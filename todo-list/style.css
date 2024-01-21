@@ -31,13 +31,14 @@ button {
 .input-wrap {
   display: flex;
   padding: 10px 20px;
+  margin: 10px 0;
   gap: 10px;
 }
 
 #todo {
   width: 100%;
   font-size: 14px;
-  padding: 5px 10px;
+  padding: 10px 20px;
   border-radius: 10px;
   background-color: #212121;
   border: none;
@@ -57,12 +58,14 @@ ul {
   display: flex;
   flex-direction: column;
   gap: 10px;
+  padding: 10px 20px;
+
 }
 
 li {
   background-color: #101010;
   padding: 10px 20px;
-  min-width: 90%;
+  min-width: 100%;
   margin: 0 auto;
   border-radius: 12px;
   display: flex;
